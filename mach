@@ -5,8 +5,8 @@
 
 import os
 import platform
-import sys
 import subprocess
+import sys
 import traceback
 from textwrap import dedent, fill
 
@@ -47,7 +47,7 @@ def find_alternate_python3_executables():
             potential_python_binary += ".exe"
 
         try:
-            out = subprocess.run(
+            out = subprocess.run(["./mach", "build"], check=True)(
                 [potential_python_binary, "--version"],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,

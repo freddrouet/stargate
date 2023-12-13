@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "gecko-dev",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
