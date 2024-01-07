@@ -5,4 +5,4 @@ edition = "2018"
 license = "MPL-2.0"
 
 [lib]
-path = "lib.rs"
+path = "gecko-dev/build/rust/mozbuild/lib.rs"

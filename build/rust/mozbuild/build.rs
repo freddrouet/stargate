@@ -11,7 +11,7 @@ fn main() {
         .find(|dir| dir.join("config.status").exists())
     {
         println!(
-            "cargo:rustc-env=BUILDCONFIG_RS={}",
+            "cargo:rustc-env=BUILDCONFIG_RS=\"{}\"",
             topobjdir
                 .join("build/rust/mozbuild/buildconfig.rs")
                 .display()
